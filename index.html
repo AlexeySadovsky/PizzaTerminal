@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles/style.scss">
+    <title>pizza-terminal</title>
+</head>
+<body>
+    <h1>Pizza Terminal</h1>
+    <div class="content">
+        <div id="form">
+            <div class="form">
+                <div class="form-block">
+                    <span class="__select__title">Пиццы:</span>
+                    <select name="pizzaType" class="__select">
+                        <option value="1" class="__select__content">Пепперони</option>
+                        <option value="2" class="__select__content">Деревенская</option>
+                        <option value="3" class="__select__content">Гавайская</option>
+                        <option value="4" class="__select__content">Грибная</option>
+                    </select>
+                </div>
+                <div class="form-block">
+                    <span class="__select__title">Размер:</span>
+                    <select name="pizzaSize" class="__select">
+                        <option value="1" class="__select__content">21</option>
+                        <option value="2" class="__select__content">26</option>
+                        <option value="3" class="__select__content">31</option>
+                        <option value="4" class="__select__content">35</option>
+                    </select>
+                </div>
+                <div  class="form-block">
+                    <span class="__select__title">Соусы:</span>
+                    <select name="pizzaSauce" class="__select">
+                        <option value="1" class="__select__content">сырный</option>
+                        <option value="2" class="__select__content">кисло-сладкий</option>
+                        <option value="3" class="__select__content">чесночный</option>
+                        <option value="4" class="__select__content">барбекю</option>
+                    </select>
+                </div>
+                <div class="form">
+                    <div  class="form-block">
+                        <a class="double-border-button" onclick="getFormData()">заказать</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+            crossOrigin="anonymous"></script>
+    <script src="View/script.js"></script>
+</body>
+</html>
